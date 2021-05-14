@@ -17,6 +17,7 @@
     <name>guli_parent</name>
     <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
+    <!--属性，依赖的版本-->
     <properties>
         <java.version>1.8</java.version>
         <guli.version>0.0.1-SNAPSHOT</guli.version>
@@ -44,7 +45,8 @@
         <cloud-alibaba.version>0.2.2.RELEASE</cloud-alibaba.version>
     </properties>
 
-    <dependencyManagement>
+    <!--父模块主要用作依赖的版本管理，但没有引用，只是版本控制-->
+    <dependencyManagement> <!--依赖管理，用作依赖的版本控制-->
         <dependencies>
             <!--Spring Cloud-->
             <dependency>
