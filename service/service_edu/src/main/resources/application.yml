@@ -7,12 +7,12 @@ spring:
     username: root
     password: root
   profiles:
-    active: devy
+    active: dev
   #设置返回json的全局时间格式
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss #添加默认时间格式，不加的话，从数据库取出来格式为：2019-10-30T06:18:46.000+00:00
     time-zone: GMT+8 #添加时区
-#mybatis 日志
+#mybatis 日志 能看到sql语句
 mybatis-plus:
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl    #sql语句打印

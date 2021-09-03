@@ -9,7 +9,8 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import org.junit.Test;
 
-/**
+/**代码生成器代码 因为不需要部署到服务器 所以不用放到src/main下面
+ * 这是一个模板  不需要会写   会改就行
  * @author
  * @since 2018/12/13
  */
@@ -24,7 +25,7 @@ public class CodeGenerator {
         // 2、全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir("E:\\myworkspace\\guli_parent\\service\\service_edu" + "/src/main/java");
+        gc.setOutputDir("E:\\myworkspace\\guli_parent\\service\\service_edu" + "/src/main/java"); //代码输出路径  最好写上绝对路径
         gc.setAuthor("zhangjianxin");
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(false); //重新生成时文件是否覆盖
@@ -37,7 +38,7 @@ public class CodeGenerator {
 
         // 3、数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/guli?serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://localhost:3306/jilin?serverTimezone=GMT%2B8");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
@@ -46,7 +47,7 @@ public class CodeGenerator {
 
         // 4、包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName("eduService"); //模块名
+        pc.setModuleName("informationService"); //模块名
         pc.setParent("com.atguigu");
         pc.setController("controller");
         pc.setEntity("entity");
